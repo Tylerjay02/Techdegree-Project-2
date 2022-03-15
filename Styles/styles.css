@@ -1,0 +1,246 @@
+/** FONT FAMILY AND FONT STYLES **/
+
+body {
+  font-family: 'Readex Pro', sans-serif;
+  background-color: #f9f9f9;
+}
+
+body p {
+  color: grey;
+}
+
+body h2 {
+  color: grey;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #4c4c4c;
+}
+
+.title {
+  padding: 20px;
+  margin-left: 5px;
+}
+
+.profile p {
+  font-size: 1.1em;
+  color: grey;
+}
+
+/** HEADER **/
+
+.title,
+.navigation li {
+  text-align: center;
+  display: block;
+}
+
+.navigation li {
+  background: white;
+  margin: 5px 0;
+  padding: 3px 0;
+}
+
+/** PROFILE **/
+
+.profile {
+  width: 87%;
+  margin: 25px auto 0 auto;
+  text-align: center;
+}
+
+.profile-image {
+  max-width: 70%;
+  padding-left: 10px;
+}
+
+/** PORTFOLIO **/
+
+h3 {
+  padding-top: 25px;
+}
+
+.portfilio {
+  background: #fff;
+  text-align: center;
+  padding-top: 3px;
+  margin-top: 35px;
+}
+
+.port-container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+  align-content: center;
+  padding: 25px 30px;
+  font-size: 0.9em;
+
+}
+
+.port-container li {
+  max-width: 275px;
+  max-height: auto;
+  justify-content: space-between;
+}
+
+.port-container li img {
+  max-width: 275px;
+}
+
+/** CONTACT **/
+
+.contact-details {
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+}
+
+.contact-details a {
+  text-decoration: none;
+  color: #605d5d;
+}
+
+/** SKILLS **/
+
+.skills {
+  text-align: center;
+  max-width: 85%;
+  margin: auto;
+}
+
+.skill-list li {
+    border-radius: 6px;
+    display: inline-block;
+    background: #b5b5b5;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+}
+/** RANDOM LINE ABOVE FOOTER **/
+
+.random-line {
+  background-color: black;
+  padding: 0.5px;
+  max-width: 85%;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 45px;
+}
+
+/** FOOTER **/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  max-width: 85%;
+  margin: auto;
+}
+
+.foot-nav {
+  display: none;
+}
+
+/** MEDIA QUERIES **/
+
+@media screen and (min-width: 769px) {
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .navigation li {
+    margin: 5px 30px;
+    background: none;
+  }
+  .profile {
+    display: flex;
+    margin-top: 40px;
+
+  }
+  .profile p {
+    order: -1;
+    text-align: left;
+    margin: 0;
+  }
+  .profile-image {
+    max-width: 40%;
+  }
+  .port-container {
+    max-width: 1050px;
+    margin: auto;
+  }
+  .port-container li {
+    margin-bottom: 25px;
+  }
+  .skills {
+    max-width: 61%;
+  }
+  .contact-details {
+    max-width: 61%;
+  }
+  .random-line {
+    max-width: 80%;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .foot-nav {
+    display: flex;
+  }
+  .foot-nav li {
+    padding: 5px;
+  }
+  .top-link{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .main-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1030px;
+    margin: auto;
+  }
+  .profile p {
+    font-size: 1.25em;
+  }
+  .profile {
+    width: 980px;
+  }
+  .skills {
+    max-width: 47%;
+  }
+  .contact-details {
+    max-width: 47%;
+  }
+  .navigation {
+    margin-top: 10px;
+  }
+  .random-line {
+    max-width: 925px;
+  }
+  footer {
+    max-width: 925px;
+  }
+}

@@ -90,7 +90,6 @@ h3 {
 
 .port-container li {
   max-width: 275px;
-  max-height: auto;
   justify-content: space-between;
 }
 
